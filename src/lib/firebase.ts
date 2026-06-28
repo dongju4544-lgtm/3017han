@@ -2,12 +2,12 @@ import { initializeApp, getApps } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey:            process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain:        process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId:         process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket:     process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId:             process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  apiKey: "AIzaSyDwiJJVliUyvGAyjnSFrYmcc1s29qDxYaE",
+  authDomain: "han-88f18.firebaseapp.com",
+  projectId: "han-88f18",
+  storageBucket: "han-88f18.firebasestorage.app",
+  messagingSenderId: "963408949696",
+  appId: "1:963408949696:web:ad0a1b6949f4e66a581825"
 };
 
 // 중복 초기화 방지
