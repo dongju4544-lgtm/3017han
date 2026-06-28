@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── 커스텀 애니메이션 ── */
+@keyframes breathe {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-4px); }
+}
+@keyframes fadeOut {
+  0%   { opacity: 1; transform: scale(1) rotate(0deg); }
+  60%  { opacity: 0.4; transform: scale(0.6) rotate(20deg); }
+  100% { opacity: 0; transform: scale(0) rotate(35deg); }
+}
+@keyframes rise {
+  0%   { transform: translateY(0) scale(0.5); opacity: 0.65; }
+  100% { transform: translateY(-80px) scale(2.2); opacity: 0; }
+}
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 14px 4px rgba(255,230,50,0.6); }
+  50%       { box-shadow: 0 0 22px 8px rgba(255,230,50,0.9); }
+}
+
+.animate-breathe  { animation: breathe  3s ease-in-out infinite; }
+.animate-fade-out { animation: fadeOut  0.9s forwards; }
+.animate-rise     { animation: rise     2.8s ease-out infinite; }
+.animate-slide-up { animation: slideUp  0.38s ease; }
+.animate-glow     { animation: pulse-glow 1.5s ease-in-out infinite; }
+
+/* 숫자 입력 스피너 제거 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+input[type="number"] { -moz-appearance: textfield; }
